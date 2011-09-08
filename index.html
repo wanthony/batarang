@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Batarang</title>
+
+  <script src="/batman/coffee-script.js" type="text/javascript"></script>
+  <script src="/batman/es5-shim.js" type="text/javascript"></script>
+  <script src="/batman/dist/batman.js" type="text/javascript"></script>
+
+  <script src="batarang.js" type="text/javascript"></script>
+
+  <link rel="stylesheet" href="http://twitter.github.com/bootstrap/assets/css/bootstrap-1.2.0.min.css">
+
+  <style>
+  * {
+    font-family: "Myriad Pro", Arial, sans-serif;
+  }
+
+  #batman {
+    width: 250px;
+    margin: 0 auto;
+    margin-top: 300px;
+    text-align: center;
+  }
+
+  #batman img {
+    margin-left: -43px;
+    margin-top: -22px;
+  }
+
+  #batman input {
+    font-size: 1.6em;
+    font-weight: bold;
+    color: #999;
+    text-align: center;
+    width: 250px;
+    margin-bottom: 50px;
+  }
+
+  body {
+    padding-top: 40px;
+  }
+  </style>
+</head>
+
+<body>
+  <div class="topbar">
+    <div class="topbar-inner">
+      <div class="container">
+        <h3><a href="/">Batarang</a></h3>
+        <ul class="nav">
+          <li><a href="/">Home</a></li>
+          <li><a data-route="/tasks">Tasks</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div data-yield="main">
+    </div>
+  </div>
+  <script type="text/javascript">
+    Batarang.run();
+  </script>
+</body>
+</html>
